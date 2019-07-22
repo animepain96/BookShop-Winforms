@@ -1,0 +1,5 @@
+D:\Visual Projects\C#\DoAn\CuaHangSach\BookShop\DTO\bin\Debug\DataTranferObject.dll
+D:\Visual Projects\C#\DoAn\CuaHangSach\BookShop\DTO\bin\Debug\DataTranferObject.pdb
+D:\Visual Projects\C#\DoAn\CuaHangSach\BookShop\DTO\obj\Debug\DataTranferObject.dll
+D:\Visual Projects\C#\DoAn\CuaHangSach\BookShop\DTO\obj\Debug\DataTranferObject.pdb
+D:\Visual Projects\C#\DoAn\CuaHangSach\BookShop\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache

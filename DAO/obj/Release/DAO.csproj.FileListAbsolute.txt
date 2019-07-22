@@ -1,0 +1,7 @@
+D:\Visual Projects\C#\DoAn\CuaHangSach\BookShop\DAO\obj\Release\DAO.csprojResolveAssemblyReference.cache
+D:\Visual Projects\C#\DoAn\CuaHangSach\BookShop\DAO\bin\Release\DataAccessObject.dll
+D:\Visual Projects\C#\DoAn\CuaHangSach\BookShop\DAO\bin\Release\DataAccessObject.pdb
+D:\Visual Projects\C#\DoAn\CuaHangSach\BookShop\DAO\bin\Release\DataTranferObject.dll
+D:\Visual Projects\C#\DoAn\CuaHangSach\BookShop\DAO\bin\Release\DataTranferObject.pdb
+D:\Visual Projects\C#\DoAn\CuaHangSach\BookShop\DAO\obj\Release\DataAccessObject.dll
+D:\Visual Projects\C#\DoAn\CuaHangSach\BookShop\DAO\obj\Release\DataAccessObject.pdb

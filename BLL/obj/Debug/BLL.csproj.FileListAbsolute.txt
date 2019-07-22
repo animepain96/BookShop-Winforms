@@ -1,0 +1,9 @@
+D:\Visual Projects\C#\DoAn\CuaHangSach\BookShop\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\Visual Projects\C#\DoAn\CuaHangSach\BookShop\BLL\bin\Debug\BussinessLayer.dll
+D:\Visual Projects\C#\DoAn\CuaHangSach\BookShop\BLL\bin\Debug\BussinessLayer.pdb
+D:\Visual Projects\C#\DoAn\CuaHangSach\BookShop\BLL\bin\Debug\DataAccessObject.dll
+D:\Visual Projects\C#\DoAn\CuaHangSach\BookShop\BLL\bin\Debug\DataTranferObject.dll
+D:\Visual Projects\C#\DoAn\CuaHangSach\BookShop\BLL\bin\Debug\DataAccessObject.pdb
+D:\Visual Projects\C#\DoAn\CuaHangSach\BookShop\BLL\bin\Debug\DataTranferObject.pdb
+D:\Visual Projects\C#\DoAn\CuaHangSach\BookShop\BLL\obj\Debug\BussinessLayer.dll
+D:\Visual Projects\C#\DoAn\CuaHangSach\BookShop\BLL\obj\Debug\BussinessLayer.pdb

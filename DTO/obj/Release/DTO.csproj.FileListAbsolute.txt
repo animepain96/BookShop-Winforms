@@ -1,0 +1,4 @@
+D:\Visual Projects\C#\DoAn\CuaHangSach\BookShop\DTO\bin\Release\DataTranferObject.dll
+D:\Visual Projects\C#\DoAn\CuaHangSach\BookShop\DTO\bin\Release\DataTranferObject.pdb
+D:\Visual Projects\C#\DoAn\CuaHangSach\BookShop\DTO\obj\Release\DataTranferObject.dll
+D:\Visual Projects\C#\DoAn\CuaHangSach\BookShop\DTO\obj\Release\DataTranferObject.pdb

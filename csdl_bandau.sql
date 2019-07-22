@@ -1,0 +1,112 @@
+﻿CREATE DATABASE CuaHangSach
+GO
+
+USE CuaHangSach
+GO
+
+CREATE TABLE NhaXuatBan
+(
+	MaNXB int IDENTITY ,
+	TenNXB nvarchar(250) NOT NULL ,
+	PRIMARY KEY(MaNXB)
+)
+GO
+
+CREATE TABLE TheLoai
+(
+	MaTL int IDENTITY PRIMARY KEY ,
+	TenTL nvarchar(250) NOT NULL
+)
+GO
+
+CREATE TABLE TacGia
+(
+	MaTG int IDENTITY PRIMARY KEY ,
+	TenTG nvarchar(100) NOT NULL
+)
+GO
+
+CREATE TABLE Sach
+(
+	MaSach int IDENTITY PRIMARY KEY,
+	TenSach nvarchar(250) NOT NULL ,
+	GiaBan float not null DEFAULT 0,
+	NamXB int not null DEFAULT 2018,
+	SoLuongTon int NOT NULL DEFAULT 0,
+	MaNXB int NOT NULL ,
+	MaTL int NOT NULL ,
+	MaTG int NOT NULL ,
+	FOREIGN KEY(MaNXB) REFERENCES NhaXuatBan(MaNXB),
+	FOREIGN KEY(MaTL) REFERENCES TheLoai(MaTL),
+	FOREIGN KEY(MaTG) REFERENCES TacGia(MaTG)
+)
+
+CREATE TABLE NhanVien
+(
+	MaNV int IDENTITY PRIMARY KEY ,
+	TenDangNhap varchar(100) NOT NULL ,
+	MatKhau varchar(1000) NOT NULL ,
+	HoTen nvarchar(150) NOT NULL ,
+	NgaySinh date NOT NULL ,
+	GioiTinh bit NOT NULL DEFAULT 0,
+	SDT varchar(20) NOT NULL ,
+	DiaChi nvarchar(250) NOT NULL
+)
+GO
+
+CREATE TABLE Quyen
+(
+	MaQuyen int IDENTITY PRIMARY KEY ,
+	TenQuyen nvarchar(150) NOT NULL 
+)
+GO
+
+CREATE TABLE PhanQuyen
+(
+	MaQuyen int NOT NULL ,
+	MaNV int NOT NULL ,
+	PRIMARY KEY(MaQuyen, MaNV),
+	FOREIGN KEY(MaQuyen) REFERENCES Quyen(MaQuyen),
+	FOREIGN KEY(MaNV) REFERENCES NhanVien(MaNV)
+)
+GO
+
+CREATE TABLE HoaDon
+(
+	MaHD int IDENTITY PRIMARY KEY,
+	NgayBan date NOT NULL DEFAULT getdate() ,
+	GiamGia int NOT NULL DEFAULT 0,
+	MaNV int NOT NULL ,
+	FOREIGN KEY(MaNV) REFERENCES NhanVien(MaNV)
+)
+GO
+
+CREATE TABLE ChiTietHoaDon
+(
+	MaCTHD int IDENTITY PRIMARY KEY ,
+	MaHD int NOT NULL ,
+	MaSach int NOT NULL ,
+	SoLuongBan int NOT NULL,
+	FOREIGN KEY (MaHD) REFERENCES HoaDon(MaHD) ,
+	FOREIGN KEY (MaSach) REFERENCES Sach(MaSach)
+)
+GO
+
+CREATE TABLE PhieuNhap
+(
+	MaPN int IDENTITY PRIMARY KEY ,
+	NgayNhap date NOT NULL DEFAULT getdate() ,
+	MaNV int NOT NULL ,
+	FOREIGN KEY (MaNV) REFERENCES NhanVien(MaNV)
+)
+GO
+
+CREATE TABLE ChiTietPhieuNhap
+(
+	MaCTPN int IDENTITY NOT null,
+	MaPN int NOT NULL ,
+	MaSach int NOT NULL ,
+	SoLuongNhap int NOT NULL ,
+	FOREIGN KEY (MaPN) REFERENCES PhieuNhap(MaPN) ,
+	FOREIGN KEY (MaSach) REFERENCES Sach(MaSach)
+)
